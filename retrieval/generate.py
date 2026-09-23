@@ -12,7 +12,22 @@ from dotenv import load_dotenv
 from retrieval.search import search
 
 load_dotenv()
-client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
+
+import os
+
+def _get_env(key: str) -> str:
+    """Reads a config value from the environment, falling back to Streamlit's
+    secrets store when running on Streamlit Cloud (which doesn't populate
+    os.environ from a .env file the way local dev does)."""
+    if key in os.environ:
+        return os.environ[key]
+    try:
+        import streamlit as st
+        return st.secrets[key]
+    except Exception:
+        raise KeyError(f"{key} not found in environment or Streamlit secrets")
+
+client = genai.Client(api_key=_get_env("GOOGLE_API_KEY"))
 
 MODEL_NAME = "gemini-flash-lite-latest"
 

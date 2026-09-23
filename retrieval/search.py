@@ -10,6 +10,21 @@ from fastembed import TextEmbedding
 
 load_dotenv()
 
+import os
+
+def _get_env(key: str) -> str:
+    """Reads a config value from the environment, falling back to Streamlit's
+    secrets store when running on Streamlit Cloud (which doesn't populate
+    os.environ from a .env file the way local dev does)."""
+    if key in os.environ:
+        return os.environ[key]
+    try:
+        import streamlit as st
+        return st.secrets[key]
+    except Exception:
+        raise KeyError(f"{key} not found in environment or Streamlit secrets")
+
+
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 _model = None
 
@@ -29,7 +44,7 @@ def search(query: str, k: int = 5, fetch_multiplier: int = 4) -> list[dict]:
     model = _load_model()
     query_embedding = list(model.embed([query]))[0].tolist()
 
-    conn = psycopg2.connect(os.environ["DATABASE_URL"])
+    conn = psycopg2.connect(_get_env("DATABASE_URL"))
     cur = conn.cursor()
     cur.execute(
         """
