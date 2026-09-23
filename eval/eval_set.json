@@ -1,0 +1,307 @@
+[
+  {
+    "query": "Want PR form info to be preserved if I click out of focus",
+    "expected_issue_number": 335768,
+    "expected_labels": [
+      "feature-request",
+      "verified",
+      "verification-needed",
+      "insiders-released"
+    ]
+  },
+  {
+    "query": "Test: Testing 2xcell-width rendering of full-width characters",
+    "expected_issue_number": 335554,
+    "expected_labels": [
+      "verified",
+      "testplan-item"
+    ]
+  },
+  {
+    "query": "Use non endgame issues again",
+    "expected_issue_number": 336313,
+    "expected_labels": [
+      "spam"
+    ]
+  },
+  {
+    "query": "Agent host applies most edits using git apply",
+    "expected_issue_number": 336174,
+    "expected_labels": [
+      "agent-host"
+    ]
+  },
+  {
+    "query": "Copilot chat with llama.cpp fails on every second request",
+    "expected_issue_number": 336121,
+    "expected_labels": [
+      "triage-needed",
+      "stale"
+    ]
+  },
+  {
+    "query": "Agent-created worktree sessions default to Local and disappear",
+    "expected_issue_number": 335825,
+    "expected_labels": [
+      "bug",
+      "voice-mode"
+    ]
+  },
+  {
+    "query": "\u5207\u6362\u56de\u5e94\u7528\u65f6\u7a97\u53e3\u95ea\u5c4f\u95ee\u9898",
+    "expected_issue_number": 335747,
+    "expected_labels": [
+      "triage-needed",
+      "stale"
+    ]
+  },
+  {
+    "query": "Show MCP server health and authentication status in the chat input",
+    "expected_issue_number": 337362,
+    "expected_labels": [
+      "mcp",
+      "ai-customizations"
+    ]
+  },
+  {
+    "query": "Web: Use AI Features fails because chat setup command is not registered",
+    "expected_issue_number": 335708,
+    "expected_labels": [
+      "vscode.dev"
+    ]
+  },
+  {
+    "query": "no ",
+    "expected_issue_number": 336920,
+    "expected_labels": [
+      "spam"
+    ]
+  },
+  {
+    "query": "Copilot sessions: pressing Enter takes several seconds to send a message",
+    "expected_issue_number": 335570,
+    "expected_labels": [
+      "triage-needed",
+      "stale"
+    ]
+  },
+  {
+    "query": "Copyright [yyyy] [name of copyright owner]  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at      http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+    "expected_issue_number": 335563,
+    "expected_labels": [
+      "invalid",
+      "triage-needed"
+    ]
+  },
+  {
+    "query": "Adding a Task in the Agents window immediately runs it",
+    "expected_issue_number": 335724,
+    "expected_labels": [
+      "info-needed"
+    ]
+  },
+  {
+    "query": "new version icon error",
+    "expected_issue_number": 336107,
+    "expected_labels": [
+      "*duplicate",
+      "triage-needed"
+    ]
+  },
+  {
+    "query": "in terminal entenring markdown files name opens it in and produces errors",
+    "expected_issue_number": 336141,
+    "expected_labels": [
+      "triage-needed"
+    ]
+  },
+  {
+    "query": "Chat feature",
+    "expected_issue_number": 337195,
+    "expected_labels": [
+      "chat-billing"
+    ]
+  },
+  {
+    "query": "Ai",
+    "expected_issue_number": 335558,
+    "expected_labels": [
+      "triage-needed"
+    ]
+  },
+  {
+    "query": "Cursor flickers between pointer and default everywhere in VS Code",
+    "expected_issue_number": 337449,
+    "expected_labels": [
+      "triage-needed",
+      "new release"
+    ]
+  },
+  {
+    "query": "github refused to connect",
+    "expected_issue_number": 336044,
+    "expected_labels": [
+      "*caused-by-extension"
+    ]
+  },
+  {
+    "query": "Suggestions",
+    "expected_issue_number": 336917,
+    "expected_labels": [
+      "info-needed"
+    ]
+  },
+  {
+    "query": "Extension Issues",
+    "expected_issue_number": 336111,
+    "expected_labels": [
+      "*duplicate"
+    ]
+  },
+  {
+    "query": "Copilot Chat OTel: emit attachments in gen_ai.input.messages as typed parts with mime type, size and token estimate",
+    "expected_issue_number": 336984,
+    "expected_labels": [
+      "triage-needed"
+    ]
+  },
+  {
+    "query": "Show thumbs-up and thumbs-down feedback actions in Agent Host chats",
+    "expected_issue_number": 336323,
+    "expected_labels": [
+      "agent-host"
+    ]
+  },
+  {
+    "query": "Test: Shareable Automations",
+    "expected_issue_number": 335507,
+    "expected_labels": [
+      "testplan-item",
+      "automations"
+    ]
+  },
+  {
+    "query": "Test: Rich GitHub reference previews in chat pills",
+    "expected_issue_number": 335896,
+    "expected_labels": [
+      "testplan-item"
+    ]
+  },
+  {
+    "query": "Make Auto Tiers enabled by default",
+    "expected_issue_number": 336594,
+    "expected_labels": [
+      "feature-request",
+      "verified",
+      "verification-needed",
+      "insiders-released",
+      "auto-model"
+    ]
+  },
+  {
+    "query": "MCP migration blocks same-name servers in different workspace roots",
+    "expected_issue_number": 335884,
+    "expected_labels": [
+      "mcp",
+      "ai-customizations"
+    ]
+  },
+  {
+    "query": "Github wont respond to companion",
+    "expected_issue_number": 336104,
+    "expected_labels": [
+      "*caused-by-extension"
+    ]
+  },
+  {
+    "query": "copoilet cradit charge",
+    "expected_issue_number": 336581,
+    "expected_labels": [
+      "chat-billing"
+    ]
+  },
+  {
+    "query": "Agents - add setting to control the worktree usage for the first session",
+    "expected_issue_number": 335722,
+    "expected_labels": [
+      "on-testplan"
+    ]
+  },
+  {
+    "query": "GitHub Copilot",
+    "expected_issue_number": 336755,
+    "expected_labels": [
+      "info-needed"
+    ]
+  },
+  {
+    "query": "Support Microsoft MAI image generation in Copilot agent workflows",
+    "expected_issue_number": 335734,
+    "expected_labels": [
+      "triage-needed",
+      "stale"
+    ]
+  },
+  {
+    "query": "Respect metered connections in Agent Host, CLI, and browser telemetry",
+    "expected_issue_number": 336679,
+    "expected_labels": [
+      "agent-host"
+    ]
+  },
+  {
+    "query": "Distractions",
+    "expected_issue_number": 336612,
+    "expected_labels": [
+      "spam"
+    ]
+  },
+  {
+    "query": "On macos version, adding tags like those on Finder",
+    "expected_issue_number": 336251,
+    "expected_labels": [
+      "feature-request",
+      "file-explorer"
+    ]
+  },
+  {
+    "query": "test: experimental permissions picker",
+    "expected_issue_number": 335602,
+    "expected_labels": [
+      "testplan-item",
+      "on-testplan"
+    ]
+  },
+  {
+    "query": "Open Agents Window from WSL Dev Container doesn't work well",
+    "expected_issue_number": 337026,
+    "expected_labels": [
+      "bug",
+      "containers",
+      "agents-window",
+      "agent-host"
+    ]
+  },
+  {
+    "query": "Dictation first-run experience does not clearly indicate model download",
+    "expected_issue_number": 337333,
+    "expected_labels": [
+      "feature-request"
+    ]
+  },
+  {
+    "query": "session counter changes to a dot, and doesn't seem to come back",
+    "expected_issue_number": 335798,
+    "expected_labels": [
+      "polish",
+      "agents-window"
+    ]
+  },
+  {
+    "query": "Agents window: let us center the bottom panel instead of it always spanning full width",
+    "expected_issue_number": 336738,
+    "expected_labels": [
+      "agents-window"
+    ]
+  }
+]

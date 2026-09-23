@@ -1,0 +1,665 @@
+{
+  "summary": {
+    "n_examples": 40,
+    "hit_at_1": 0.825,
+    "recall_at_5": 0.85,
+    "category_hit_rate": 0.85,
+    "duplicate_detection_accuracy": 0.775
+  },
+  "details": [
+    {
+      "query": "Want PR form info to be preserved if I click out of focus",
+      "expected_issue": 335768,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "feature-request",
+        "testplan-item",
+        "verified"
+      ],
+      "expected_labels": [
+        "verification-needed",
+        "feature-request",
+        "insiders-released",
+        "verified"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Test: Testing 2xcell-width rendering of full-width characters",
+      "expected_issue": 335554,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "testplan-item",
+        "verified",
+        "bug"
+      ],
+      "expected_labels": [
+        "testplan-item",
+        "verified"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Use non endgame issues again",
+      "expected_issue": 336313,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "spam",
+        "endgame-plan",
+        "bug"
+      ],
+      "expected_labels": [
+        "spam"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Agent host applies most edits using git apply",
+      "expected_issue": 336174,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "agent-host",
+        "feature-request",
+        "verified"
+      ],
+      "expected_labels": [
+        "agent-host"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Copilot chat with llama.cpp fails on every second request",
+      "expected_issue": 336121,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "agent-host",
+        "stale",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "stale",
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Agent-created worktree sessions default to Local and disappear",
+      "expected_issue": 335825,
+      "top1_correct": false,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "on-testplan",
+        "voice-mode",
+        "bug"
+      ],
+      "expected_labels": [
+        "voice-mode",
+        "bug"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "\u5207\u6362\u56de\u5e94\u7528\u65f6\u7a97\u53e3\u95ea\u5c4f\u95ee\u9898",
+      "expected_issue": 335747,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "stale",
+        "triage-needed",
+        "info-needed"
+      ],
+      "expected_labels": [
+        "stale",
+        "triage-needed"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Show MCP server health and authentication status in the chat input",
+      "expected_issue": 337362,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "mcp",
+        "triage-needed",
+        "ai-customizations"
+      ],
+      "expected_labels": [
+        "mcp",
+        "ai-customizations"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Web: Use AI Features fails because chat setup command is not registered",
+      "expected_issue": 335708,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "vscode.dev",
+        "author-verification-requested",
+        "testplan-item"
+      ],
+      "expected_labels": [
+        "vscode.dev"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "no ",
+      "expected_issue": 336920,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [
+        "feature-request",
+        "terminal",
+        "agents-window"
+      ],
+      "expected_labels": [
+        "spam"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Copilot sessions: pressing Enter takes several seconds to send a message",
+      "expected_issue": 335570,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "stale",
+        "triage-needed",
+        "info-needed"
+      ],
+      "expected_labels": [
+        "stale",
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Copyright [yyyy] [name of copyright owner]  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at      http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",
+      "expected_issue": 335563,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "spam",
+        "triage-needed",
+        "invalid"
+      ],
+      "expected_labels": [
+        "triage-needed",
+        "invalid"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Adding a Task in the Agents window immediately runs it",
+      "expected_issue": 335724,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "agent-host",
+        "agents-window",
+        "info-needed"
+      ],
+      "expected_labels": [
+        "info-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "new version icon error",
+      "expected_issue": 336107,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "*duplicate",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "*duplicate",
+        "triage-needed"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "in terminal entenring markdown files name opens it in and produces errors",
+      "expected_issue": 336141,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "custom-editors",
+        "feature-request",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Chat feature",
+      "expected_issue": 337195,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [
+        "triage-needed",
+        "stale",
+        "testplan-item"
+      ],
+      "expected_labels": [
+        "chat-billing"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Ai",
+      "expected_issue": 335558,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [
+        "automations",
+        "feature-request",
+        "info-needed"
+      ],
+      "expected_labels": [
+        "triage-needed"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Cursor flickers between pointer and default everywhere in VS Code",
+      "expected_issue": 337449,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "stale",
+        "new release",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "new release",
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "github refused to connect",
+      "expected_issue": 336044,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "*caused-by-extension"
+      ],
+      "expected_labels": [
+        "*caused-by-extension"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Suggestions",
+      "expected_issue": 336917,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [
+        "feature-request",
+        "verified",
+        "bug"
+      ],
+      "expected_labels": [
+        "info-needed"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Extension Issues",
+      "expected_issue": 336111,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "*duplicate"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Copilot Chat OTel: emit attachments in gen_ai.input.messages as typed parts with mime type, size and token estimate",
+      "expected_issue": 336984,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "stale",
+        "triage-needed",
+        "invalid"
+      ],
+      "expected_labels": [
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Show thumbs-up and thumbs-down feedback actions in Agent Host chats",
+      "expected_issue": 336323,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "testplan-item",
+        "agent-host",
+        "agents-window"
+      ],
+      "expected_labels": [
+        "agent-host"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Test: Shareable Automations",
+      "expected_issue": 335507,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "automations",
+        "testplan-item",
+        "feature-request"
+      ],
+      "expected_labels": [
+        "automations",
+        "testplan-item"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Test: Rich GitHub reference previews in chat pills",
+      "expected_issue": 335896,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "feature-request",
+        "testplan-item",
+        "verified"
+      ],
+      "expected_labels": [
+        "testplan-item"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Make Auto Tiers enabled by default",
+      "expected_issue": 336594,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "feature-request",
+        "insiders-released",
+        "auto-model"
+      ],
+      "expected_labels": [
+        "verified",
+        "auto-model",
+        "feature-request",
+        "verification-needed",
+        "insiders-released"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "MCP migration blocks same-name servers in different workspace roots",
+      "expected_issue": 335884,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "mcp",
+        "testplan-item",
+        "ai-customizations"
+      ],
+      "expected_labels": [
+        "mcp",
+        "ai-customizations"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Github wont respond to companion",
+      "expected_issue": 336104,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "*caused-by-extension"
+      ],
+      "expected_labels": [
+        "*caused-by-extension"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "copoilet cradit charge",
+      "expected_issue": 336581,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "triage-needed",
+        "agents-window",
+        "chat-billing"
+      ],
+      "expected_labels": [
+        "chat-billing"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Agents - add setting to control the worktree usage for the first session",
+      "expected_issue": 335722,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "on-testplan",
+        "feature-request",
+        "agents-window"
+      ],
+      "expected_labels": [
+        "on-testplan"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "GitHub Copilot",
+      "expected_issue": 336755,
+      "top1_correct": false,
+      "in_top_k": false,
+      "category_hit": false,
+      "predicted_labels": [],
+      "expected_labels": [
+        "info-needed"
+      ],
+      "duplicate_correct": false
+    },
+    {
+      "query": "Support Microsoft MAI image generation in Copilot agent workflows",
+      "expected_issue": 335734,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "mcp",
+        "stale",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "stale",
+        "triage-needed"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Respect metered connections in Agent Host, CLI, and browser telemetry",
+      "expected_issue": 336679,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "testplan-item",
+        "agent-host",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "agent-host"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Distractions",
+      "expected_issue": 336612,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "spam",
+        "stale",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "spam"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "On macos version, adding tags like those on Finder",
+      "expected_issue": 336251,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "feature-request",
+        "stale",
+        "triage-needed"
+      ],
+      "expected_labels": [
+        "file-explorer",
+        "feature-request"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "test: experimental permissions picker",
+      "expected_issue": 335602,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "on-testplan",
+        "testplan-item",
+        "bug"
+      ],
+      "expected_labels": [
+        "on-testplan",
+        "testplan-item"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Open Agents Window from WSL Dev Container doesn't work well",
+      "expected_issue": 337026,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "agents-window",
+        "containers",
+        "bug"
+      ],
+      "expected_labels": [
+        "agent-host",
+        "agents-window",
+        "containers",
+        "bug"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Dictation first-run experience does not clearly indicate model download",
+      "expected_issue": 337333,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "feature-request",
+        "insiders-released",
+        "verified"
+      ],
+      "expected_labels": [
+        "feature-request"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "session counter changes to a dot, and doesn't seem to come back",
+      "expected_issue": 335798,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "polish",
+        "agents-window",
+        "bug"
+      ],
+      "expected_labels": [
+        "polish",
+        "agents-window"
+      ],
+      "duplicate_correct": true
+    },
+    {
+      "query": "Agents window: let us center the bottom panel instead of it always spanning full width",
+      "expected_issue": 336738,
+      "top1_correct": true,
+      "in_top_k": true,
+      "category_hit": true,
+      "predicted_labels": [
+        "modernization",
+        "agents-window",
+        "bug"
+      ],
+      "expected_labels": [
+        "agents-window"
+      ],
+      "duplicate_correct": true
+    }
+  ]
+}

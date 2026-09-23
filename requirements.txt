@@ -1,0 +1,11 @@
+requests
+psycopg2-binary
+pgvector
+sentence-transformers
+google-genai
+fastapi
+uvicorn
+streamlit
+python-dotenv
+pydantic
+tqdm
