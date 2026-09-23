@@ -8,13 +8,13 @@ import os
 import json
 import psycopg2
 from dotenv import load_dotenv
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 from tqdm import tqdm
 
 load_dotenv()
 
 CHUNKS_PATH = "data/processed/chunks.json"
-MODEL_NAME = "all-MiniLM-L6-v2"
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 BATCH_SIZE = 64
 
 
@@ -23,11 +23,11 @@ def main():
         chunks = json.load(f)
 
     print(f"Loading embedding model ({MODEL_NAME})... this downloads once, then caches locally.")
-    model = SentenceTransformer(MODEL_NAME)
+    model = TextEmbedding(model_name=MODEL_NAME)
 
     texts = [c["text"] for c in chunks]
     print(f"Embedding {len(texts)} chunks...")
-    embeddings = model.encode(texts, batch_size=BATCH_SIZE, show_progress_bar=True)
+    embeddings = list(tqdm(model.embed(texts, batch_size=BATCH_SIZE), total=len(texts)))
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     cur = conn.cursor()

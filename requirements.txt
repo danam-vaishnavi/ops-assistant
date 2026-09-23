@@ -1,7 +1,7 @@
 requests
 psycopg2-binary
 pgvector
-sentence-transformers
+fastembed
 google-genai
 fastapi
 uvicorn

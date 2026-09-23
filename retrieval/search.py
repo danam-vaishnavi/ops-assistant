@@ -6,18 +6,18 @@ same space -- this consistency is exactly what makes retrieval work at all.
 import os
 import psycopg2
 from dotenv import load_dotenv
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 load_dotenv()
 
-MODEL_NAME = "all-MiniLM-L6-v2"
+MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 _model = None
 
 
 def _load_model():
     global _model
     if _model is None:
-        _model = SentenceTransformer(MODEL_NAME)
+        _model = TextEmbedding(model_name=MODEL_NAME)
     return _model
 
 
@@ -27,7 +27,7 @@ def search(query: str, k: int = 5, fetch_multiplier: int = 4) -> list[dict]:
     We over-fetch (k * fetch_multiplier) raw candidates, then keep only each
     issue's single best-scoring chunk, in similarity order, until we have k."""
     model = _load_model()
-    query_embedding = model.encode(query).tolist()
+    query_embedding = list(model.embed([query]))[0].tolist()
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     cur = conn.cursor()
